@@ -583,8 +583,12 @@
     .testi-author { display:flex; align-items:center; gap:14px; }
     .testi-avatar {
       width:48px; height:48px; border-radius:50%;
-      object-fit:cover;
+      object-fit:cover; object-position:center;
       border:2px solid #E3F2FD;
+    }
+    img.testi-avatar {
+      width:48px; height:48px; min-width:48px; min-height:48px;
+      transform:scale(1.4);
     }
     .testi-name { font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.9rem; color:#2D2D2D; }
     .testi-role { font-family:'Open Sans',sans-serif; font-size:0.78rem; color:#6B7280; margin-top:2px; }
