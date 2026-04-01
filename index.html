@@ -416,6 +416,7 @@
       transition:transform 0.6s cubic-bezier(0.4,0,0.2,1);
     }
     .flip-card:hover .flip-inner { transform:rotateY(180deg); }
+    .flip-card.flipped .flip-inner { transform:rotateY(180deg); }
     .flip-front, .flip-back {
       position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden;
       border-radius:18px; display:flex; flex-direction:column; align-items:center; justify-content:center;
@@ -1167,7 +1168,6 @@
               </svg>
             </div>
             <h3>Window Cleaning</h3>
-            <p class="flip-hint">Hover to learn more</p>
           </div>
           <div class="flip-back">
             <h4>Window Cleaning</h4>
@@ -1210,7 +1210,6 @@
               </svg>
             </div>
             <h3>Pressure Washing</h3>
-            <p class="flip-hint">Hover to learn more</p>
           </div>
           <div class="flip-back">
             <h4>Pressure Washing</h4>
@@ -1250,7 +1249,6 @@
               </svg>
             </div>
             <h3>Softwashing</h3>
-            <p class="flip-hint">Hover to learn more</p>
           </div>
           <div class="flip-back">
             <h4>Softwashing</h4>
@@ -1294,7 +1292,6 @@
               </svg>
             </div>
             <h3>Roof Cleaning</h3>
-            <p class="flip-hint">Hover to learn more</p>
           </div>
           <div class="flip-back">
             <h4>Roof Cleaning</h4>
@@ -1339,7 +1336,6 @@
               </svg>
             </div>
             <h3>Paver Sealing</h3>
-            <p class="flip-hint">Hover to learn more</p>
           </div>
           <div class="flip-back">
             <h4>Paver Sealing</h4>
@@ -1394,7 +1390,6 @@
               </svg>
             </div>
             <h3>Gutter Cleaning</h3>
-            <p class="flip-hint">Hover to learn more</p>
           </div>
           <div class="flip-back">
             <h4>Gutter Cleaning</h4>
@@ -1936,6 +1931,17 @@
   });
 
   if (testiCards.length > 0) startTestiAutoplay();
+
+  // Flip cards tap-to-flip on mobile
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    document.querySelectorAll('.flip-card').forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        // Don't flip if they clicked a link on the back
+        if (e.target.tagName === 'A') return;
+        this.classList.toggle('flipped');
+      });
+    });
+  }
 
   // Intersection Observer for fade-up
   (function() {
