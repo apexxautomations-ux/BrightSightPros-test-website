@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/jpeg" href="brand_assets/654850351_122094461294882135_3136541590111965693_n.jpg">
+  <title>Privacy Policy | Bright Sight Pro Services</title>
+  <meta name="description" content="Privacy Policy for Bright Sight Pro Services. Learn how we collect, use, and protect your personal information." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://brightsightpro.com/privacy-policy.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'b-blue': '#1A8FD1',
+            'b-blue-dk': '#1270A8',
+            'b-light': '#7EC8E3',
+            'b-sky': '#E3F2FD',
+            'b-green': '#4BAE4F',
+            'b-green-dk': '#3a9040',
+            'b-dark': '#2D2D2D',
+            'b-gray': '#6B7280',
+            'b-lgray': '#F3F4F6',
+            'b-navy': '#0d2137',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      color: #2D2D2D;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+    }
+
+    /* Top bar */
+    .top-bar {
+      background: #1A8FD1;
+      color: #fff;
+      font-size: 0.8125rem;
+      padding: 8px 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 500;
+    }
+
+    /* Nav */
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      background: #fff;
+      height: 120px;
+      box-shadow: 0 2px 16px rgba(26,143,209,.08);
+      transition: box-shadow .3s ease;
+    }
+    .site-nav .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .site-nav .logo img {
+      height: 110px;
+      width: auto;
+      display: block;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #2D2D2D;
+      text-decoration: none;
+      transition: color .2s ease;
+      padding: 4px 0;
+    }
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      color: #1A8FD1;
+    }
+    .nav-links .dropdown {
+      position: relative;
+    }
+    .nav-links .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 12px 40px rgba(26,143,209,.15);
+      min-width: 220px;
+      padding: 12px 0;
+      padding-top: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s ease;
+      z-index: 910;
+    }
+    .nav-links .dropdown-menu::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      left: 0;
+      right: 0;
+      height: 20px;
+    }
+    .nav-links .dropdown:hover .dropdown-menu,
+    .nav-links .dropdown:focus-within .dropdown-menu {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .nav-links .dropdown-menu a {
+      display: block;
+      padding: 10px 20px;
+      font-size: 0.8125rem;
+      text-transform: none;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+    .nav-links .dropdown-menu a:hover {
+      background: #E3F2FD;
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      cursor: pointer;
+      border: 3px solid transparent;
+      transition: transform .2s ease, opacity .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.15);
+    }
+    .btn:focus-visible {
+      outline: 3px solid #7EC8E3;
+      outline-offset: 2px;
+    }
+    .btn:active {
+      transform: translateY(0);
+    }
+    .btn-green {
+      background: #4BAE4F;
+      color: #fff;
+      border-color: #4BAE4F;
+      box-shadow: 0 4px 14px rgba(75,174,79,.35);
+    }
+    .btn-green:hover {
+      background: #3a9040;
+      border-color: #3a9040;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #1A8FD1;
+      border-color: #1A8FD1;
+    }
+    .btn-outline:hover {
+      background: #1A8FD1;
+      color: #fff;
+    }
+    .btn-sm {
+      padding: 10px 20px;
+      font-size: 0.8125rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #2D2D2D;
+      color: rgba(255,255,255,.7);
+      padding: 64px 0 0;
+    }
+    .site-footer h4 {
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #fff;
+      margin: 0 0 20px;
+    }
+    .site-footer a {
+      color: rgba(255,255,255,.6);
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: color .2s ease;
+    }
+    .site-footer a:hover,
+    .site-footer a:focus-visible {
+      color: #7EC8E3;
+    }
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .site-footer ul li {
+      margin-bottom: 10px;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      margin-top: 48px;
+      padding: 24px 0;
+      text-align: center;
+      font-size: 0.8125rem;
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      background: rgba(13,33,55,.95);
+      z-index: 950;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s ease;
+    }
+    .mobile-menu.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .mobile-menu a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #fff;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+    .mobile-menu a:hover { color: #7EC8E3; }
+    .mobile-close {
+      position: absolute;
+      top: 28px;
+      right: 28px;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: #2D2D2D;
+      border-radius: 2px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .desktop-only { display: none !important; }
+      .hamburger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 32px !important; }
+    }
+    @media (max-width: 520px) {
+      .footer-grid { grid-template-columns: 1fr !important; }
+    }
+    @media (min-width: 901px) {
+      .mobile-only { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========== TOP BAR ========== -->
+<div class="top-bar">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px;">
+    <span style="opacity:.85;">Serving Palm Beach Gardens, Jupiter, Wellington, Royal Palm Beach & West Palm Beach</span>
+    <a href="tel:5616579297" style="color:#fff;text-decoration:none;font-weight:700;">
+      <span style="margin-right:4px;">&#9742;</span> 561-657-9297
+    </a>
+  </div>
+</div>
+
+<!-- ========== NAVIGATION ========== -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="brand_assets/654850351_122094461294882135_3136541590111965693_n.jpg" alt="Bright Sight Pro Services" />
+    </a>
+    <ul class="nav-links desktop-only">
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" aria-haspopup="true">Services &#9662;</a>
+        <div class="dropdown-menu">
+          <a href="window-cleaning.html">Window Cleaning</a>
+          <a href="pressure-washing.html">Pressure Washing</a>
+          <a href="softwashing.html">Softwashing</a>
+          <a href="roof-cleaning.html">Roof Cleaning</a>
+          <a href="paver-sealing.html">Paver Sealing</a>
+        </div>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-right desktop-only">
+      <a href="tel:5616579297" class="btn btn-outline btn-sm">&#9742; 561-657-9297</a>
+      <a href="index.html#get-quote" class="btn btn-green btn-sm">Free Estimate</a>
+    </div>
+    <button class="hamburger mobile-only" onclick="toggleNav()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mobile-close" onclick="toggleNav()" aria-label="Close menu">&times;</button>
+  <a href="index.html" onclick="toggleNav()">Home</a>
+  <a href="window-cleaning.html" onclick="toggleNav()">Window Cleaning</a>
+  <a href="pressure-washing.html" onclick="toggleNav()">Pressure Washing</a>
+  <a href="softwashing.html" onclick="toggleNav()">Softwashing</a>
+  <a href="roof-cleaning.html" onclick="toggleNav()">Roof Cleaning</a>
+  <a href="paver-sealing.html" onclick="toggleNav()">Paver Sealing</a>
+  <a href="about.html" onclick="toggleNav()">About</a>
+  <a href="tel:5616579297" style="color:#7EC8E3;">&#9742; 561-657-9297</a>
+  <a href="index.html#get-quote" class="btn btn-green" onclick="toggleNav()">Free Estimate</a>
+</div>
+
+<!-- ========== PRIVACY POLICY CONTENT ========== -->
+<section style="padding:64px 0 80px;background:#fff;">
+  <div style="max-width:800px;margin:0 auto;padding:0 24px;">
+
+    <h1 style="font-size:2.2rem;font-weight:900;text-transform:uppercase;color:#2D2D2D;margin:0 0 8px;">Privacy Policy</h1>
+    <p style="font-size:0.9rem;color:#6B7280;margin:0 0 40px;">Last updated: March 2026</p>
+
+    <p style="margin:0 0 32px;">Bright Sight Pro Services ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you use our website or services.</p>
+
+    <!-- 1. Information We Collect -->
+    <h2 style="font-size:1.3rem;font-weight:800;color:#2D2D2D;margin:0 0 12px;">1. Information We Collect</h2>
+    <p style="margin:0 0 8px;">We may collect the following personal information from you:</p>
+    <ul style="margin:0 0 32px;padding-left:24px;">
+      <li>Name</li>
+      <li>Phone number</li>
+      <li>Property address</li>
+      <li>Photos of your property</li>
+    </ul>
+    <p style="margin:-20px 0 32px;">This information is collected through quote request forms on our website. All forms are processed through Jotform.</p>
+
+    <!-- 2. How We Use Your Information -->
+    <h2 style="font-size:1.3rem;font-weight:800;color:#2D2D2D;margin:0 0 12px;">2. How We Use Your Information</h2>
+    <p style="margin:0 0 8px;">We use the information we collect to:</p>
+    <ul style="margin:0 0 16px;padding-left:24px;">
+      <li>Provide you with a quote for our services</li>
+      <li>Contact you about your service request</li>
+      <li>Schedule and perform services at your property</li>
+    </ul>
+    <p style="margin:0 0 32px;">We do not sell, rent, or share your personal information with third parties.</p>
+
+    <!-- 3. Data Storage -->
+    <h2 style="font-size:1.3rem;font-weight:800;color:#2D2D2D;margin:0 0 12px;">3. Data Storage</h2>
+    <p style="margin:0 0 32px;">Your information is stored securely through Jotform's servers. We retain your information only as long as necessary to provide our services.</p>
+
+    <!-- 4. Cookies -->
+    <h2 style="font-size:1.3rem;font-weight:800;color:#2D2D2D;margin:0 0 12px;">4. Cookies</h2>
+    <p style="margin:0 0 32px;">Our website uses basic cookies for site functionality. We use Tailwind CSS CDN and Google Fonts, which may set their own cookies. These third-party services have their own privacy policies governing how they handle data.</p>
+
+    <!-- 5. Third-Party Services -->
+    <h2 style="font-size:1.3rem;font-weight:800;color:#2D2D2D;margin:0 0 12px;">5. Third-Party Services</h2>
+    <p style="margin:0 0 8px;">Our website uses the following third-party services:</p>
+    <ul style="margin:0 0 32px;padding-left:24px;">
+      <li><strong>Jotform</strong> for form processing</li>
+      <li><strong>Google Fonts</strong> for typography</li>
+      <li><strong>Vercel</strong> for website hosting</li>
+    </ul>
+
+    <!-- 6. Your Rights -->
+    <h2 style="font-size:1.3rem;font-weight:800;color:#2D2D2D;margin:0 0 12px;">6. Your Rights</h2>
+    <p style="margin:0 0 12px;">You can request deletion of your personal information at any time. To make a request, please contact us:</p>
+    <ul style="margin:0 0 32px;padding-left:24px;">
+      <li>Email: <a href="mailto:info@brightsightpro.com" style="color:#1A8FD1;text-decoration:none;font-weight:600;">info@brightsightpro.com</a></li>
+      <li>Phone: <a href="tel:5616579297" style="color:#1A8FD1;text-decoration:none;font-weight:600;">561-657-9297</a></li>
+    </ul>
+
+    <!-- 7. Changes to This Policy -->
+    <h2 style="font-size:1.3rem;font-weight:800;color:#2D2D2D;margin:0 0 12px;">7. Changes to This Policy</h2>
+    <p style="margin:0 0 32px;">We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last updated" date.</p>
+
+    <!-- 8. Contact Us -->
+    <h2 style="font-size:1.3rem;font-weight:800;color:#2D2D2D;margin:0 0 12px;">8. Contact Us</h2>
+    <p style="margin:0 0 8px;">If you have any questions about this Privacy Policy, please contact us:</p>
+    <p style="margin:0 0 4px;"><strong>Bright Sight Pro Services</strong></p>
+    <p style="margin:0 0 4px;">Palm Beach Gardens, FL</p>
+    <p style="margin:0 0 4px;">Phone: <a href="tel:5616579297" style="color:#1A8FD1;text-decoration:none;font-weight:600;">561-657-9297</a></p>
+    <p style="margin:0 0 0;">Email: <a href="mailto:info@brightsightpro.com" style="color:#1A8FD1;text-decoration:none;font-weight:600;">info@brightsightpro.com</a></p>
+
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="site-footer">
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px;">
+    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;" class="footer-grid">
+      <!-- Col 1 -->
+      <div>
+        <img src="brand_assets/654850351_122094461294882135_3136541590111965693_n.jpg" alt="Bright Sight Pro Services" style="height:48px;width:auto;margin-bottom:18px" />
+        <p style="font-size:0.875rem;line-height:1.7;margin:0 0 16px;">
+          Professional exterior cleaning for homes in Palm Beach Gardens and surrounding areas. Windows, driveways, siding, roofs, and pavers.
+        </p>
+        <a href="tel:5616579297" style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:1rem;color:#7EC8E3;text-decoration:none;">
+          561-657-9297
+        </a>
+      </div>
+      <!-- Col 2: Services -->
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="window-cleaning.html">Window Cleaning</a></li>
+          <li><a href="pressure-washing.html">Pressure Washing</a></li>
+          <li><a href="softwashing.html">Softwashing</a></li>
+          <li><a href="roof-cleaning.html">Roof Cleaning</a></li>
+          <li><a href="paver-sealing.html">Paver Sealing</a></li>
+        </ul>
+      </div>
+      <!-- Col 3: Service Areas -->
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="index.html">Palm Beach Gardens</a></li>
+          <li><a href="index.html">Jupiter</a></li>
+          <li><a href="index.html">Wellington</a></li>
+          <li><a href="index.html">Royal Palm Beach</a></li>
+          <li><a href="index.html">West Palm Beach</a></li>
+        </ul>
+      </div>
+      <!-- Col 4: Quick Links -->
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#get-quote">Free Estimate</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Bright Sight Pro Services. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+  // Mobile nav toggle
+  function toggleNav() {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+  }
+</script>
+
+</body>
+</html>
