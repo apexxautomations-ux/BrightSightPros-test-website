@@ -384,9 +384,29 @@
 
       <!-- Form -->
       <div class="fu">
-        <div>
-          <iframe id="JotFormIFrame-260895965057069" title="Get Your Quote" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/260895965057069" frameborder="0" style="width:100%;min-width:100%;height:700px;border:none;" scrolling="no"></iframe>
-        </div>
+        <h3 style="font-size:18px;font-weight:700;color:#2D2D2D;margin-bottom:6px">Request Your Free Quote</h3>
+        <p style="font-size:13.5px;color:#6B7280;margin-bottom:24px">Fill out the form and we'll reach out within 24 hours.</p>
+        <form action="https://formspree.io/f/mykbprno" method="POST">
+          <input type="hidden" name="_subject" value="Quote Request - Roof Cleaning">
+          <input type="hidden" name="service" value="Roof Cleaning">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 12px;">
+            <div>
+              <label style="display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#2D2D2D;margin-bottom:5px;">First Name *</label>
+              <input type="text" name="first_name" required placeholder="First Name" style="width:100%;padding:12px 14px;border:2px solid #E3F2FD;border-radius:8px;font-family:'Open Sans',sans-serif;font-size:0.9rem;color:#2D2D2D;margin-bottom:14px;background:#fff;">
+            </div>
+            <div>
+              <label style="display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#2D2D2D;margin-bottom:5px;">Last Name *</label>
+              <input type="text" name="last_name" required placeholder="Last Name" style="width:100%;padding:12px 14px;border:2px solid #E3F2FD;border-radius:8px;font-family:'Open Sans',sans-serif;font-size:0.9rem;color:#2D2D2D;margin-bottom:14px;background:#fff;">
+            </div>
+          </div>
+          <label style="display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#2D2D2D;margin-bottom:5px;">Phone Number *</label>
+          <input type="tel" name="phone" required placeholder="(000) 000-0000" style="width:100%;padding:12px 14px;border:2px solid #E3F2FD;border-radius:8px;font-family:'Open Sans',sans-serif;font-size:0.9rem;color:#2D2D2D;margin-bottom:14px;background:#fff;">
+          <label style="display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#2D2D2D;margin-bottom:5px;">Property Address *</label>
+          <input type="text" name="address" required placeholder="123 Main St, Palm Beach Gardens, FL" style="width:100%;padding:12px 14px;border:2px solid #E3F2FD;border-radius:8px;font-family:'Open Sans',sans-serif;font-size:0.9rem;color:#2D2D2D;margin-bottom:14px;background:#fff;">
+          <label style="display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;color:#2D2D2D;margin-bottom:5px;">Message</label>
+          <textarea name="message" placeholder="Tell us about your project..." style="width:100%;padding:12px 14px;border:2px solid #E3F2FD;border-radius:8px;font-family:'Open Sans',sans-serif;font-size:0.9rem;color:#2D2D2D;margin-bottom:14px;background:#fff;resize:vertical;min-height:70px;"></textarea>
+          <button type="submit" style="width:100%;padding:14px 28px;background:#4BAE4F;color:#fff;border:3px solid #4BAE4F;border-radius:6px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:0.875rem;text-transform:uppercase;letter-spacing:0.06em;cursor:pointer;box-shadow:0 4px 14px rgba(75,174,79,.35);transition:transform .2s ease,background .2s ease;">Get My Free Quote</button>
+        </form>
       </div>
     </div>
   </div>
